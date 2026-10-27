@@ -30,5 +30,20 @@
 ## 프로젝트 디렉터리 cproj3를 생성하고 디렉터리 아래에 파일을 저장
 ## 입력기능, 최대값 구하기, 출력기능을 모두 함수로 만들 것
 ## 소스파일, 빌드 및 실행 명령어, 실행결과를 캡쳐하여 제출하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| maxlib.h | <img src="gcc2-1.png"> |
+| maxlib.c | <img src="gcc2-2.png"> |
+| main.c | <img src="gcc2-3.png"> |
+| result | <img src="gcc2-4.png"> |
 
 # 실습과제 3
+## C++언어를 이용하여 실습과제1을 수행하시오.(예제 4번을 참고할 것)
+## 프로젝트 디렉터리 cppproj3를 생성하고 디렉터리 아래에 파일을 저장
+## 소스파일, 빌드 및 실행 명령어, 실행결과를 캡쳐하여 제출하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| max.hpp | <img src="gcc3-1.png"> |
+| max.cpp | <img src="gcc3-2.png"> |
+| main.c | <img src="gcc3-3.png"> |
+| result | <img src="gcc3-4.png"> |
