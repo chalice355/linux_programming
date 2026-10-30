@@ -21,10 +21,28 @@
 
 # 실습과제 2
 ## GCC 강의노트 실습과제 2번을 make로 빌드하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| make | <img src="make2-1.png"> |
 
 ## 소스파일, Makefile, 실행 명령어와 결과를 제출하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| maxlib.h | <img src="make2-2.png"> |
+| maxlib.c | <img src="make2-3.png"> |
+| main.c | <img src="make2-4.png"> |
+| result | <img src="make2-5.png"> |
 
 # 실습과제 3
 ## GCC 강의노트 실습과제 3번을 make로 빌드하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| make | <img src="make3-1.png"> |
 
 ## 소스파일, Makefile, 실행 명령어와 결과를 제출하시오.
+| 구분 | 이미지 |
+| --- | --- |
+| maxlib.h | <img src="make3-2.png"> |
+| maxlib.c | <img src="make3-3.png"> |
+| main.c | <img src="make3-4.png"> |
+| result | <img src="make3-5.png"> |
