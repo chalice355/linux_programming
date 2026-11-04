@@ -235,7 +235,14 @@ $ ./shapes
 좌표 (1,1)에 폭5, 높이10인 직사각형
 좌표 (2,2)에 밑변3, 높이4인 삼각형
 ```
-<img src="result8-1.png">
+
+| 구분 | 이미지 |
+| --- | --- |
+| shape.hpp | <img src="cpp8_1/cpp8-1-1.png"> |
+| shape.cpp | <img src="cpp8_1/cpp8-1-2.png"> |
+| main.cpp | <img src="cpp8_1/cpp8-1-3.png"> |
+| Makefile | <img src="cpp8_1/cpp8-1-4.png"> |
+| 실행결과 | <img src="cpp8_1/cpp8-1-5.png"> |
 
 # 실습과제 2
 실습과제 1번을 Shape 객체포인터를 이용하여 같은 결과를 얻도록 수정하시오. (업캐스팅 사용)
@@ -448,7 +455,13 @@ $ ./shapes
 좌표 (1,1)에 폭5, 높이10인 직사각형
 좌표 (2,2)에 밑변3, 높이4인 삼각형
 ```
-<img src="result8-2.png">
+| 구분 | 이미지 |
+| --- | --- |
+| shape.hpp | <img src="cpp8_2/cpp8-2-1.png"> |
+| shape.cpp | <img src="cpp8_2/cpp8-2-2.png"> |
+| main.cpp | <img src="cpp8_2/cpp8-2-3.png"> |
+| Makefile | <img src="cpp8_2/cpp8-2-4.png"> |
+| 실행결과 | <img src="cpp8_2/cpp8-2-5.png"> |
 
 # 실습과제 3
 실습과제 1과 같은 구조로 작성하되, Shape 클래스의 멤버변수 x, y는 protected로 선언할 것.
@@ -581,7 +594,13 @@ $ ./shapes
 좌표 (1,1)에 폭5, 높이10인 직사각형
 좌표 (2,2)에 밑변3, 높이4인 삼각형
 ```
-<img src="result8-3.png">
+| 구분 | 이미지 |
+| --- | --- |
+| shape.hpp | <img src="cpp8_3/cpp8-3-1.png"> |
+| shape.cpp | <img src="cpp8_3/cpp8-3-2.png"> |
+| main.cpp | <img src="cpp8_3/cpp8-3-3.png"> |
+| Makefile | <img src="cpp8_3/cpp8-3-4.png"> |
+| 실행결과 | <img src="cpp8_3/cpp8-3-5.png"> |
 
 # private과 protected 비교
 | 접근지정 | 외부(main) | 파생클래스 | 실습과제 |
