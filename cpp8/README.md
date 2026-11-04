@@ -224,18 +224,6 @@ clean :
 - clean은 실제 파일이 아닌 phony target
 - make clean 입력 시 실행파일과 목적파일을 삭제
 
-## 실행결과
-```
-$ make
-g++ -g -Wall -c main.cpp
-g++ -g -Wall -c shape.cpp
-g++ -o shapes main.o shape.o
-$ ./shapes
-좌표 (0,0)에 반지름 2인 원
-좌표 (1,1)에 폭5, 높이10인 직사각형
-좌표 (2,2)에 밑변3, 높이4인 삼각형
-```
-
 | 구분 | 이미지 |
 | --- | --- |
 | shape.hpp | <img src="cpp8_1/cpp8-1-1.png"> |
@@ -444,17 +432,6 @@ clean :
 - clean은 실제 파일이 아닌 phony target
 - make clean 입력 시 실행파일과 목적파일을 삭제
 
-## 실행결과
-```
-$ make
-g++ -g -Wall -c main.cpp
-g++ -g -Wall -c shape.cpp
-g++ -o shapes main.o shape.o
-$ ./shapes
-좌표 (0,0)에 반지름 2인 원
-좌표 (1,1)에 폭5, 높이10인 직사각형
-좌표 (2,2)에 밑변3, 높이4인 삼각형
-```
 | 구분 | 이미지 |
 | --- | --- |
 | shape.hpp | <img src="cpp8_2/cpp8-2-1.png"> |
@@ -583,17 +560,6 @@ clean :
 - clean은 실제 파일이 아닌 phony target
 - make clean 입력 시 실행파일과 목적파일을 삭제
 
-## 실행결과
-```
-$ make
-g++ -g -Wall -c main.cpp
-g++ -g -Wall -c shape.cpp
-g++ -o shapes main.o shape.o
-$ ./shapes
-좌표 (0,0)에 반지름 2인 원
-좌표 (1,1)에 폭5, 높이10인 직사각형
-좌표 (2,2)에 밑변3, 높이4인 삼각형
-```
 | 구분 | 이미지 |
 | --- | --- |
 | shape.hpp | <img src="cpp8_3/cpp8-3-1.png"> |
@@ -601,9 +567,3 @@ $ ./shapes
 | main.cpp | <img src="cpp8_3/cpp8-3-3.png"> |
 | Makefile | <img src="cpp8_3/cpp8-3-4.png"> |
 | 실행결과 | <img src="cpp8_3/cpp8-3-5.png"> |
-
-# private과 protected 비교
-| 접근지정 | 외부(main) | 파생클래스 | 실습과제 |
-| --- | --- | --- | --- |
-| private | 접근 불가 | 접근 불가, 기본클래스 public 함수로만 접근 | 1, 2 |
-| protected | 접근 불가 | 직접 접근 가능 | 3 |
