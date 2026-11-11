@@ -246,11 +246,11 @@ clean :
 ## 소스파일, Makefile, 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| tv.hpp | <img src="task2/task2-1.png"> |
-| tv.cpp | <img src="task2/task2-2.png"> |
-| main.cpp | <img src="task2/task2-3.png"> |
-| Makefile | <img src="task2/task2-4.png"> |
-| 실행결과 | <img src="task2/task2-5.png"> |
+| tv.hpp | <img src="img/cpp82-1-1.png"> |
+| tv.cpp | <img src="img/cpp82-1-2.png"> |
+| main.cpp | <img src="img/cpp82-1-3.png"> |
+| Makefile | <img src="img/cpp82-1-4.png"> |
+| 실행결과 | <img src="img/cpp82-1-5.png"> |
 
 # 실습과제 3
 위치좌표(x, y)를 멤버로 갖는 Shape 클래스를 선언하고 이를 상속한 파생클래스 Circle, Rect, Triangle 클래스를 작성하시오. Shape의 멤버변수는 private로 선언하고, 파생클래스 생성자를 정의할 때 호출할 기본클래스의 생성자를 명시적으로 지정할 것.
@@ -413,11 +413,11 @@ clean :
 ## 소스파일, Makefile, 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| shape.hpp | <img src="task3/task3-1.png"> |
-| shape.cpp | <img src="task3/task3-2.png"> |
-| main.cpp | <img src="task3/task3-3.png"> |
-| Makefile | <img src="task3/task3-4.png"> |
-| 실행결과 | <img src="task3/task3-5.png"> |
+| shape.hpp | <img src="img/cpp82-2-1.png"> |
+| shape.cpp | <img src="img/cpp82-2-2.png"> |
+| main.cpp | <img src="img/cpp82-2-3.png"> |
+| Makefile | <img src="img/cpp82-2-4.png"> |
+| 실행결과 | <img src="img/cpp82-2-5.png"> |
 
 # 실습문제 1번
 교재에 주어진 Circle 클래스를 상속받아 이름을 추가한 NamedCircle 클래스를 작성하여 아래 main()이 실행되도록 하시오.
@@ -548,11 +548,11 @@ clean :
 ## 소스파일, Makefile, 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| circle.hpp | <img src="prob1/prob1-1.png"> |
-| circle.cpp | <img src="prob1/prob1-2.png"> |
-| main.cpp | <img src="prob1/prob1-3.png"> |
-| Makefile | <img src="prob1/prob1-4.png"> |
-| 실행결과 | <img src="prob1/prob1-5.png"> |
+| circle.hpp | <img src="img/cpp82-3-1.png"> |
+| circle.cpp | <img src="img/cpp82-3-2.png"> |
+| main.cpp | <img src="img/cpp82-3-3.png"> |
+| Makefile | <img src="img/cpp82-3-4.png"> |
+| 실행결과 | <img src="img/cpp82-3-5.png"> |
 
 # 실습문제 3번
 교재에 주어진 Point 클래스를 상속받은 ColorPoint 클래스를 작성하고 전체 프로그램을 완성하시오.
@@ -685,9 +685,9 @@ clean :
 ## 소스파일, Makefile, 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| point.hpp | <img src="prob3/prob3-1.png"> |
-| point.cpp | <img src="prob3/prob3-2.png"> |
-| main.cpp | <img src="prob3/prob3-3.png"> |
-| Makefile | <img src="prob3/prob3-4.png"> |
-| 실행결과 | <img src="prob3/prob3-5.png"> |
+| point.hpp | <img src="img/cpp82-4-1.png"> |
+| point.cpp | <img src="img/cpp82-4-2.png"> |
+| main.cpp | <img src="img/cpp82-4-3.png"> |
+| Makefile | <img src="img/cpp82-4-4.png"> |
+| 실행결과 | <img src="img/cpp82-4-5.png"> |
 
