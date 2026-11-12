@@ -99,10 +99,10 @@ main.o : main.cpp getmax.hpp
 
 | 구분 | 이미지 |
 | --- | --- |
-| getmax.hpp | <img src="cpp10_2/cpp10-1-1.png"> |
-| main.cpp | <img src="cpp10_2/cpp10-1-2.png"> |
-| Makefile | <img src="cpp10_2/cpp10-1-3.png"> |
-| 실행결과 | <img src="cpp10_2/cpp10-1-4.png"> |
+| getmax.hpp | <img src="cpp10-1-1.png"> |
+| main.cpp | <img src="cpp10-1-2.png"> |
+| Makefile | <img src="cpp10-1-3.png"> |
+| 실행결과 | <img src="cpp10-1-4.png"> |
 
 # 실습과제 3
 ```cpp
@@ -206,8 +206,8 @@ circle.o : circle.cpp circle.hpp
 
 | 구분 | 이미지 |
 | --- | --- |
-| circle.hpp | <img src="cpp10_3/cpp10-2-1.png"> |
-| circle.cpp | <img src="cpp10_3/cpp10-2-2.png"> |
-| main.cpp | <img src="cpp10_3/cpp10-2-3.png"> |
-| Makefile | <img src="cpp10_3/cpp10-2-4.png"> |
-| 실행결과 | <img src="cpp10_3/cpp10-2-5.png"> |
+| circle.hpp | <img src="cpp10-2-1.png"> |
+| circle.cpp | <img src="cpp10-2-2.png"> |
+| main.cpp | <img src="cpp10-2-3.png"> |
+| Makefile | <img src="cpp10-2-4.png"> |
+| 실행결과 | <img src="cpp10-2-5.png"> |
