@@ -99,10 +99,10 @@ main.o : main.cpp getmax.hpp
 
 | 구분 | 이미지 |
 | --- | --- |
-| getmax.hpp | <img src="cpp10_2/cpp10-2-1.png"> |
-| main.cpp | <img src="cpp10_2/cpp10-2-2.png"> |
-| Makefile | <img src="cpp10_2/cpp10-2-3.png"> |
-| 실행결과 | <img src="cpp10_2/cpp10-2-4.png"> |
+| getmax.hpp | <img src="cpp10_2/cpp10-1-1.png"> |
+| main.cpp | <img src="cpp10_2/cpp10-1-2.png"> |
+| Makefile | <img src="cpp10_2/cpp10-1-3.png"> |
+| 실행결과 | <img src="cpp10_2/cpp10-1-4.png"> |
 
 # 실습과제 3
 ```cpp
@@ -118,4 +118,96 @@ public:
 ```cpp
 bool operator>(Circle op2);
 ```
-* 
+* Circle 객체끼리 비교하는 > 연산자 함수를 멤버 함수로 선언
+* a > b는 컴파일러에 의해 a.operator>(b)로 변환되어 호출
+* 비교 결과가 참 또는 거짓이므로 리턴 타입은 bool
+
+```cpp
+template <class T>
+T bigger(T a, T b){
+    return (a>b)? a:b;
+}
+```
+* 두 매개변수를 비교하여 큰 값을 리턴
+* 템플릿이므로 헤더 파일에 작성
+
+## circle.cpp
+```cpp
+#include "circle.hpp"
+```
+* 클래스 선언부 포함
+
+```cpp
+Circle::Circle(int radius){
+    this->radius = radius;
+}
+int Circle::getRadius(){
+    return radius;
+}
+```
+* 생성자와 getRadius() 구현
+
+```cpp
+bool Circle::operator>(Circle op2){
+    return radius > op2.radius;
+}
+```
+* 자신(왼쪽)의 반지름과 op2(오른쪽)의 반지름을 비교
+* op2.radius는 private 멤버지만, 같은 Circle 클래스의 멤버함수 안이므로 접근 가능
+* 자신의 반지름이 더 크면 true, 아니면 false 리턴
+
+```cpp
+#include <iostream>
+#include "circle.hpp"
+using namespace std;
+```
+* cout, endl을 사용하기 위해 iostream 포함
+* 템플릿 함수가 정의된 circle.hpp를 포함하여 호출과 정의가 같은 소스파일에 존재하게 함
+
+```cpp
+int a=20, b=50, c;
+c = bigger(a,b);
+cout << "20과 50 중 큰 값은 " << c << endl;
+```
+* T가 int로 구체화하고, > 연산자로 비교하여 더 큰 값을 출력
+* a보다 b가 크므로, b가 리턴되어 c에 복사되고 50으로 출력
+
+```cpp
+Circle donut(10), pizza(20), y;
+y = bigger(donut, pizza);
+cout << "donut과 pizza 중 큰 반지름은 " << y.getRadius() << endl;
+```
+* 반지름 10인 donut, 반지름 20인 pizza 객체 생성
+* y는 기본값 1로 생성
+* 10 > 20은 false이므로, pizza가 리턴되어 y에 복사되고 20을 출력
+
+```cpp
+return (a>b)? a:b;
+```
+* 정상종료
+
+## Makefile
+```makefile
+OBJS = main.o circle.o
+TARGET = bigger
+```
+* main.cpp와 circle.cpp를 각각 컴파일하여 링크
+
+```makefile
+main.o : main.cpp circle.hpp
+	$(CX) $(CXFLAGS) -c main.cpp
+
+circle.o : circle.cpp circle.hpp
+	$(CX) $(CXFLAGS) -c circle.cpp
+```
+* 각각 목적파일로 컴파일하고, 헤더파일 수정 시, 둘 다 다시 컴파일
+
+## 실행결과
+
+| 구분 | 이미지 |
+| --- | --- |
+| circle.hpp | <img src="cpp10_3/cpp10-2-1.png"> |
+| circle.cpp | <img src="cpp10_3/cpp10-2-2.png"> |
+| main.cpp | <img src="cpp10_3/cpp10-2-3.png"> |
+| Makefile | <img src="cpp10_3/cpp10-2-4.png"> |
+| 실행결과 | <img src="cpp10_3/cpp10-2-5.png"> |
