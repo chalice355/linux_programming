@@ -1,24 +1,6 @@
-# 10장 템플릿 (2) 실습과제
-
-모든 과제는 리눅스에서 분할컴파일 구조로 작성하고 make로 빌드함
-
-| 폴더 | 내용 |
-| --- | --- |
-| task1 | 실습과제 1, 템플릿 클래스 Box |
-| task2 | 실습과제 2, 템플릿 클래스 GClass와 swap() |
-| task3 | 실습과제 3, 교재 522쪽 12번 Container |
-| task4 | 실습과제 4, 템플릿 클래스 MyQueue |
-
-## 템플릿 클래스의 분할컴파일 구조
-- 템플릿 클래스는 객체를 생성하는 코드(main.cpp)에서 `Box<int>`처럼 타입이 정해져야 컴파일러가 실제 클래스를 만들어냄(구체화)
-- 구현부를 별도의 .cpp 파일로 분리하면 main.cpp를 컴파일할 때 멤버함수의 정의가 보이지 않아 구체화할 수 없으므로 링크할 때 `undefined reference` 에러 발생
-- 따라서 **헤더파일에 클래스 선언부와 구현부를 모두 작성**하고, 파일 안에서 주석으로 선언부와 구현부를 구분함
-- 소스파일은 main.cpp 하나이며, main.cpp에서 헤더파일을 include하여 사용
-
 # 실습과제 1
-아래 결과가 나오도록 템플릿 클래스 Box를 정의하시오.
 
-## box.hpp (클래스 선언부, 구현부)
+## box.hpp
 ```cpp
 #ifndef _BOX_HPP_
 #define _BOX_HPP_
@@ -64,7 +46,7 @@ void Box<T>::setValue(T value) {
 - 저장된 값을 T 타입으로 리턴
 - 새 값으로 변경
 
-## main.cpp (메인함수)
+## main.cpp
 ```cpp
 #include <iostream>
 #include <string>
@@ -85,7 +67,7 @@ strBox.setValue("템플릿 기초 완료!");
 ```
 - T가 string으로 구체화, 문자열 리터럴이 string으로 변환되어 생성자와 setValue()에 전달됨
 
-## Makefile (빌드설정)
+## Makefile
 ```makefile
 CX = g++
 CXFLAGS = -g -Wall
@@ -114,24 +96,18 @@ clean :
 - make clean 입력 시 실행파일과 목적파일 삭제
 
 ## 실행결과
-```
-정수 상자: 100
-실수 상자: 3.14
-문자열 상자: 안녕하세요
-변경된 문자열 상자: 템플릿 기초 완료!
-```
-## 소스파일, Makefile, 실행결과
+
 | 구분 | 이미지 |
 | --- | --- |
-| box.hpp | <img src="task1/task1-1.png"> |
-| main.cpp | <img src="task1/task1-2.png"> |
-| Makefile | <img src="task1/task1-3.png"> |
-| 실행결과 | <img src="task1/task1-4.png"> |
+| box.hpp | <img src="img/102-1-1.png"> |
+| main.cpp | <img src="img/102-1-2.png"> |
+| Makefile | <img src="img/102-1-3.png"> |
+| 실행결과 | <img src="img/102-1-4.png"> |
 
 # 실습과제 2
 예제2를 참고하여 아래 결과가 나오도록 템플릿 클래스 GClass를 정의하시오. 멤버 함수 swap를 추가할 것
 
-## gclass.hpp (클래스 선언부, 구현부)
+## gclass.hpp
 ```cpp
 #ifndef _GCLASS_HPP_
 #define _GCLASS_HPP_
@@ -189,7 +165,7 @@ void GClass<T1, T2>::swap() {
 - **추가한 함수**, 임시 변수 tmp에 data1을 보관한 뒤 data1에 data2를, data2에 tmp를 넣어 두 값을 교환
 - data1과 data2를 서로 대입하므로 T1과 T2가 같은 타입(또는 서로 변환 가능한 타입)일 때 사용 가능, main()에서 GClass<int, int>, GClass<double, double>로 사용
 
-## main.cpp (메인함수)
+## main.cpp
 ```cpp
 GClass<int, int> x;
 x.set(2, 5);
@@ -213,7 +189,7 @@ cout << "a=" << a << '\t' << "b=" << b << endl;
 ```
 - '\t'는 탭 문자로 a와 b 사이를 띄움
 
-## Makefile (빌드설정)
+## Makefile
 ```makefile
 CX = g++
 CXFLAGS = -g -Wall
@@ -242,22 +218,15 @@ clean :
 - make clean 입력 시 실행파일과 목적파일 삭제
 
 ## 실행결과
-```
-a=2	b=5
-a=5	b=2
-c=3.14	d=6.28
-c=6.28	d=3.14
-```
-## 소스파일, Makefile, 실행결과
+
 | 구분 | 이미지 |
 | --- | --- |
-| gclass.hpp | <img src="task2/task2-1.png"> |
-| main.cpp | <img src="task2/task2-2.png"> |
-| Makefile | <img src="task2/task2-3.png"> |
-| 실행결과 | <img src="task2/task2-4.png"> |
+| gclass.hpp | <img src="img/102-2-1.png"> |
+| main.cpp | <img src="img/102-2-2.png"> |
+| Makefile | <img src="img/102-2-3.png"> |
+| 실행결과 | <img src="img/102-2-4.png"> |
 
 # 실습과제 3
-교재 522페이지 12번 문제를 푸시오. 템플릿 클래스 Container를 작성하고자 한다.
 
 | 문제 | 답 |
 | --- | --- |
@@ -268,7 +237,7 @@ c=6.28	d=3.14
 | (5) 객체 선언문 | `Container<char> c(26);` |
 | (6) main() | 아래 main.cpp |
 
-## container.hpp (클래스 선언부, 구현부)
+## container.hpp
 ```cpp
 #ifndef _CONTAINER_HPP_
 #define _CONTAINER_HPP_
@@ -283,8 +252,8 @@ class Container {
     T* p;
     int size;
 ```
-- **(1)** T 타입의 포인터 p, 동적 배열의 시작 주소를 저장
-- **(1)** 배열의 크기를 나타내는 변수 size
+- T 타입의 포인터 p, 동적 배열의 시작 주소를 저장
+- 배열의 크기를 나타내는 변수 size
 
 ```cpp
 public:
@@ -303,7 +272,7 @@ Container<T>::Container(int n) {
     size = n;
 }
 ```
-- **(2)** 생성자, new로 T 타입 원소 n개의 배열을 동적 할당하여 시작 주소를 p에 저장
+- 생성자, new로 T 타입 원소 n개의 배열을 동적 할당하여 시작 주소를 p에 저장
 - 배열의 크기 n을 size에 저장
 
 ```cpp
@@ -312,7 +281,7 @@ Container<T>::~Container() {
     delete[] p;
 }
 ```
-- **(3)** 소멸자, 객체가 소멸될 때 생성자에서 할당한 배열을 반환
+- 소멸자, 객체가 소멸될 때 생성자에서 할당한 배열을 반환
 - 배열을 할당했으므로 delete가 아닌 delete[]를 사용, 반환하지 않으면 메모리 누수 발생
 
 ```cpp
@@ -321,9 +290,9 @@ T Container<T>::get(int index) {
     return p[index];
 }
 ```
-- **(4)** index 위치의 값을 T 타입으로 리턴
+- index 위치의 값을 T 타입으로 리턴
 
-## main.cpp (메인함수)
+## main.cpp
 ```cpp
 Container<char> c(26);
 ```
@@ -349,7 +318,7 @@ return 0;
 ```
 - main()이 끝나면 c가 소멸되면서 소멸자가 호출되어 동적 배열이 반환됨
 
-## Makefile (빌드설정)
+## Makefile
 ```makefile
 CX = g++
 CXFLAGS = -g -Wall
@@ -378,29 +347,17 @@ clean :
 - make clean 입력 시 실행파일과 목적파일 삭제
 
 ## 실행결과
-```
-zyxwvutsrqponmlkjihgfedcba
-```
-## 소스파일, Makefile, 실행결과
+
 | 구분 | 이미지 |
 | --- | --- |
-| container.hpp | <img src="task3/task3-1.png"> |
-| main.cpp | <img src="task3/task3-2.png"> |
-| Makefile | <img src="task3/task3-3.png"> |
-| 실행결과 | <img src="task3/task3-4.png"> |
+| container.hpp | <img src="img/102-3-1.png"> |
+| main.cpp | <img src="img/102-3-2.png"> |
+| Makefile | <img src="img/102-3-3.png"> |
+| 실행결과 | <img src="img/102-3-4.png"> |
 
 # 실습과제 4
-예제10-5의 스택 클래스와 비슷하게 Queue 클래스를 템플릿으로 작성하고 동작을 테스트하는 코드를 작성하라
 
-## 스택과 큐의 차이
-| 구분 | 스택(MyStack) | 큐(MyQueue) |
-| --- | --- | --- |
-| 구조 | 후입 선출(LIFO), 나중에 넣은 것이 먼저 나옴 | 선입 선출(FIFO), 먼저 넣은 것이 먼저 나옴 |
-| 삽입/삭제 | push(), pop() | enqueue(), dequeue() |
-| 위치 변수 | tos 하나 (한쪽 끝에서만 넣고 뺌) | front(꺼낼 위치), rear(넣을 위치) 두 개 |
-| 예 | 1, 2, 3을 넣으면 3, 2, 1 순서로 나옴 | 1, 2, 3을 넣으면 1, 2, 3 순서로 나옴 |
-
-## myqueue.hpp (클래스 선언부, 구현부)
+## myqueue.hpp
 ```cpp
 #ifndef _MYQUEUE_HPP_
 #define _MYQUEUE_HPP_
@@ -455,7 +412,7 @@ void MyQueue<T>::enqueue(T element) {
 ```
 - 큐가 꽉 찼으면 오류를 표시하고 종료
 - rear 위치에 원소를 저장하고 rear를 다음 칸으로 이동
-- % 100으로 배열 끝(99)에 도달하면 0번으로 돌아가는 **원형 큐**, 앞쪽에서 꺼내 비워진 칸을 다시 사용할 수 있음
+- % 100으로 배열 끝(99)에 도달하면 0번으로 돌아가는 원형 큐, 앞쪽에서 꺼내 비워진 칸을 다시 사용할 수 있음
 
 ```cpp
 template <class T>
@@ -482,7 +439,7 @@ bool MyQueue<T>::isEmpty() {
 ```
 - 원소가 없으면 true 리턴, main()에서 큐가 빌 때까지 꺼낼 때 사용
 
-## main.cpp (테스트 코드)
+## main.cpp
 ```cpp
 MyQueue<int> iQueue;
 iQueue.enqueue(1);
@@ -516,7 +473,7 @@ iQueue.dequeue();
 ```
 - 이미 비어 있는 큐에서 꺼내면 queue empty 오류 메시지가 출력되는지 확인
 
-## Makefile (빌드설정)
+## Makefile
 ```makefile
 CX = g++
 CXFLAGS = -g -Wall
@@ -545,18 +502,11 @@ clean :
 - make clean 입력 시 실행파일과 목적파일 삭제
 
 ## 실행결과
-```
-int 큐 : 1 2 3
-double 큐 : 1.5 2.5
-char 큐 : a b c
-string 큐 : first second
-빈 큐에서 꺼내기 : queue empty
-```
-## 소스파일, Makefile, 실행결과
+
 | 구분 | 이미지 |
 | --- | --- |
-| myqueue.hpp | <img src="task4/task4-1.png"> |
-| main.cpp | <img src="task4/task4-2.png"> |
-| Makefile | <img src="task4/task4-3.png"> |
-| 실행결과 | <img src="task4/task4-4.png"> |
+| myqueue.hpp | <img src="img/102-4-1.png"> |
+| main.cpp | <img src="img/102-4-2.png"> |
+| Makefile | <img src="img/102-4-3.png"> |
+| 실행결과 | <img src="img/102-4-4.png"> |
 
