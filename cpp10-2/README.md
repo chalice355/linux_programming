@@ -99,10 +99,10 @@ clean :
 
 | 구분 | 이미지 |
 | --- | --- |
-| box.hpp | <img src="img/102-1-1.png"> |
-| main.cpp | <img src="img/102-1-2.png"> |
-| Makefile | <img src="img/102-1-3.png"> |
-| 실행결과 | <img src="img/102-1-4.png"> |
+| box.hpp | <img src="img/cpp102-1-1.png"> |
+| main.cpp | <img src="img/cpp102-1-2.png"> |
+| Makefile | <img src="img/cpp102-1-3.png"> |
+| 실행결과 | <img src="img/cpp102-1-4.png"> |
 
 # 실습과제 2
 예제2를 참고하여 아래 결과가 나오도록 템플릿 클래스 GClass를 정의하시오. 멤버 함수 swap를 추가할 것
@@ -221,10 +221,10 @@ clean :
 
 | 구분 | 이미지 |
 | --- | --- |
-| gclass.hpp | <img src="img/102-2-1.png"> |
-| main.cpp | <img src="img/102-2-2.png"> |
-| Makefile | <img src="img/102-2-3.png"> |
-| 실행결과 | <img src="img/102-2-4.png"> |
+| gclass.hpp | <img src="img/cpp102-2-1.png"> |
+| main.cpp | <img src="img/cpp102-2-2.png"> |
+| Makefile | <img src="img/cpp102-2-3.png"> |
+| 실행결과 | <img src="img/cpp102-2-4.png"> |
 
 # 실습과제 3
 
@@ -350,10 +350,10 @@ clean :
 
 | 구분 | 이미지 |
 | --- | --- |
-| container.hpp | <img src="img/102-3-1.png"> |
-| main.cpp | <img src="img/102-3-2.png"> |
-| Makefile | <img src="img/102-3-3.png"> |
-| 실행결과 | <img src="img/102-3-4.png"> |
+| container.hpp | <img src="img/cpp102-3-1.png"> |
+| main.cpp | <img src="img/cpp102-3-2.png"> |
+| Makefile | <img src="img/cpp102-3-3.png"> |
+| 실행결과 | <img src="img/cpp102-3-4.png"> |
 
 # 실습과제 4
 
@@ -505,8 +505,8 @@ clean :
 
 | 구분 | 이미지 |
 | --- | --- |
-| myqueue.hpp | <img src="img/102-4-1.png"> |
-| main.cpp | <img src="img/102-4-2.png"> |
-| Makefile | <img src="img/102-4-3.png"> |
-| 실행결과 | <img src="img/102-4-4.png"> |
+| myqueue.hpp | <img src="img/cpp102-4-1.png"> |
+| main.cpp | <img src="img/cpp102-4-2.png"> |
+| Makefile | <img src="img/cpp102-4-3.png"> |
+| 실행결과 | <img src="img/cpp102-4-4.png"> |
 
