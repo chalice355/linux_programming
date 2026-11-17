@@ -12,35 +12,35 @@
 ```cpp
 template <class T>
 class Box {
-    T value;
+    T val;
 public:
-    Box(T value);
+    Box(T v);
     T getValue();
-    void setValue(T value);
+    void setValue(T v);
 };
 ```
 - 템플릿 매개변수 T로 상자에 담을 값의 타입을 일반화
-- T 타입 멤버변수 value 하나를 가짐
+- T 타입 멤버변수 val 하나를 가짐
 - 값을 받는 생성자, 값을 리턴하는 getValue(), 값을 바꾸는 setValue() 선언
 
 ```cpp
 template <class T>
-Box<T>::Box(T value) {
-    this->value = value;
+Box<T>::Box(T v) {
+    val = v;
 }
 ```
 - 클래스 밖에서 멤버함수를 구현할 때는 함수마다 template <class T>를 붙이고 클래스 이름을 Box<T>로 씀
-- 매개변수 value를 멤버변수에 저장, 이름이 같으므로 this->로 구분
+- 매개변수 v를 멤버변수 val에 저장
 
 ```cpp
 template <class T>
 T Box<T>::getValue() {
-    return value;
+    return val;
 }
 
 template <class T>
-void Box<T>::setValue(T value) {
-    this->value = value;
+void Box<T>::setValue(T v) {
+    val = v;
 }
 ```
 - 저장된 값을 T 타입으로 리턴
