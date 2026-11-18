@@ -2,5 +2,5 @@
 
 | 구분 | 화면 |
 | --- | --- |
-| 연결형 서비스 | <img src="img/tcp.png"> |
-| 비연결형 서비스 | <img src="img/udp.png"> |
+| 연결형 서비스 | <img src="tcp.png"> |
+| 비연결형 서비스 | <img src="udp.png"> |
