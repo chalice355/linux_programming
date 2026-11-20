@@ -6,19 +6,19 @@
 #include "minmax.hpp"
 
 int getMax(vector<int>& v) {
-    int max = v.front();                        // 첫 번째 원소를 최대값으로 가정
+    int max = v.front();
     vector<int>::iterator it;
     for (it = v.begin() + 1; it != v.end(); it++) {
-        if (*it > max) max = *it;               // 더 큰 값이 있으면 교체
+        if (*it > max) max = *it;
     }
     return max;
 }
 
 int getMin(vector<int>& v) {
-    int min = v.front();                        // 첫 번째 원소를 최소값으로 가정
+    int min = v.front();
     vector<int>::iterator it;
     for (it = v.begin() + 1; it != v.end(); it++) {
-        if (*it < min) min = *it;               // 더 작은 값이 있으면 교체
+        if (*it < min) min = *it;
     }
     return min;
 }

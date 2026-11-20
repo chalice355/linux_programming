@@ -16,7 +16,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         cout << "문자열을 입력하세요: ";
         getline(cin, word);
-        sv.push_back(word);                     // 벡터의 끝에 단어 추가
+        sv.push_back(word);
     }
     cout << "사전에서 제일 뒤에 나오는 단어는 " << lastWord(sv) << " 입니다." << endl;
     return 0;

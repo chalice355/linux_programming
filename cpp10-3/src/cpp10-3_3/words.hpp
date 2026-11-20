@@ -9,7 +9,7 @@
 #include <vector>
 using namespace std;
 
-string toLower(string s);               // 문자열을 모두 소문자로 바꾸어 리턴
-string lastWord(vector<string>& sv);    // 사전에서 제일 뒤에 나오는 단어 리턴
+string toLower(string s);
+string lastWord(vector<string>& sv);
 
 #endif

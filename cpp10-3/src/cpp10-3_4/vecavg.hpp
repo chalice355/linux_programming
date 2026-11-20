@@ -8,8 +8,8 @@
 #include <vector>
 using namespace std;
 
-void printVector(vector<int>& v);       // 벡터의 모든 원소 출력
-void eraseNegative(vector<int>& v);     // 벡터에서 음수 원소를 모두 삭제
-double average(vector<int>& v);         // 벡터 원소의 평균값 리턴
+void printVector(vector<int>& v);
+void eraseNegative(vector<int>& v);
+double average(vector<int>& v);
 
 #endif

@@ -8,7 +8,7 @@
 #include <vector>
 using namespace std;
 
-int getMax(vector<int>& v);     // 벡터 원소 중 최대값 리턴
-int getMin(vector<int>& v);     // 벡터 원소 중 최소값 리턴
+int getMax(vector<int>& v);
+int getMin(vector<int>& v);
 
 #endif

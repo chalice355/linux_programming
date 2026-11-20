@@ -15,7 +15,7 @@ int main() {
     cout << "정수 4개를 입력하시오: ";
     for (int i = 0; i < 4; i++) {
         cin >> num;
-        v.push_back(num);                       // 벡터의 끝에 원소 추가
+        v.push_back(num);
     }
     cout << "최대값은 " << getMax(v) << ", 최소값은 " << getMin(v) << "입니다." << endl;
     return 0;

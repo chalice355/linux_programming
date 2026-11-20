@@ -25,7 +25,7 @@ int main() {
     cout << "음수를 삭제 후 벡터원소 : ";
     printVector(v);
 
-    if (v.empty())                              // 모두 음수여서 남은 원소가 없는 경우
+    if (v.empty())
         cout << "남은 원소가 없어 평균을 구할 수 없습니다." << endl;
     else
         cout << "평균값 : " << fixed << setprecision(1) << average(v) << endl;
