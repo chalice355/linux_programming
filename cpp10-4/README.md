@@ -200,7 +200,6 @@ clean :
 | 실행결과 | <img src="img/cpp10-4_2/cpp104-2-5.png"> |
 
 # 실습과제 3
-STL의 vector클래스와 알고리즘을 이용하여 다음 처럼 동작하는 프로그램을 작성하시오.
 
 ## words.hpp
 ```cpp
@@ -780,4 +779,3 @@ clean :
 | main.cpp | <img src="img/cpp10-4_7/cpp104-7-2.png"> |
 | Makefile | <img src="img/cpp10-4_7/cpp104-7-3.png"> |
 | 실행결과 | <img src="img/cpp10-4_7/cpp104-7-4.png"> |
-
