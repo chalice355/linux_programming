@@ -1,23 +1,4 @@
-# 10장 STL 알고리즘 실습과제
-
-모든 과제는 리눅스에서 분할컴파일 구조로 작성하고 make로 빌드함
-
-| 폴더 | 내용 | 사용한 알고리즘 |
-| --- | --- | --- |
-| src/cpp10-4_1 | 실습과제 1, 정수 크기순 출력 | max_element, min_element, distance, sort |
-| src/cpp10-4_2 | 실습과제 2, 사전에서 제일 뒤의 단어 | max_element |
-| src/cpp10-4_3 | 실습과제 3, 사전 순서 출력 | sort |
-| src/cpp10-4_4 | 실습과제 4, 최우수학생 | max_element, Student의 < 연산자 |
-| src/cpp10-4_5 | 실습과제 5, 성적순 출력 | sort, greater, Student의 > 연산자 |
-| src/cpp10-4_6 | 실습과제 6, my_max_element, my_min_element | 직접 구현한 템플릿 함수 |
-| src/cpp10-4_7 | 실습과제 7, my_sort | 직접 구현한 템플릿 함수 |
-
-- 클래스가 없는 과제(1~3)는 헤더파일에 함수 선언부, 소스파일에 함수 구현부를 작성함
-- 템플릿 함수 과제(6, 7)는 함수가 호출하는 곳에서 구체화되어야 하므로 헤더파일에 정의를 모두 작성하고 소스파일은 main.cpp 하나로 구성함
-- 알고리즘 함수는 `#include <algorithm>`, 이름 공간은 `using namespace std;`
-
 # 실습과제 1
-키보드로부터 정수 4개를 입력 받아 크기순으로 출력하는 코드를 작성하시오. STL의 vector클래스와 알고리즘을 이용하여 구현하시오.
 
 ## vecprint.hpp
 ```cpp
@@ -134,14 +115,13 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| vecprint.hpp | <img src="img/cpp104-1-1.png"> |
-| vecprint.cpp | <img src="img/cpp104-1-2.png"> |
-| main.cpp | <img src="img/cpp104-1-3.png"> |
-| Makefile | <img src="img/cpp104-1-4.png"> |
-| 실행결과 | <img src="img/cpp104-1-5.png"> |
+| vecprint.hpp | <img src="img/cpp10-4-1/cpp104-1-1.png"> |
+| vecprint.cpp | <img src="img/cpp10-4-1/cpp104-1-2.png"> |
+| main.cpp | <img src="img/cpp10-4-1/cpp104-1-3.png"> |
+| Makefile | <img src="img/cpp10-4-1/cpp104-1-4.png"> |
+| 실행결과 | <img src="img/cpp10-4-1/cpp104-1-5.png"> |
 
 # 실습과제 2
-예제 10-13을 참고하여 반드시 STL의 vector클래스와 알고리즘을 이용하여 다음 처럼 동작하는 프로그램을 작성하시오.
 
 ## words.hpp
 ```cpp
@@ -228,17 +208,13 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| words.hpp | <img src="img/cpp104-2-1.png"> |
-| words.cpp | <img src="img/cpp104-2-2.png"> |
-| main.cpp | <img src="img/cpp104-2-3.png"> |
-| Makefile | <img src="img/cpp104-2-4.png"> |
-| 실행결과 | <img src="img/cpp104-2-5.png"> |
+| words.hpp | <img src="img/cpp10-4-2/cpp104-2-1.png"> |
+| words.cpp | <img src="img/cpp10-4-2/cpp104-2-2.png"> |
+| main.cpp | <img src="img/cpp10-4-2/cpp104-2-3.png"> |
+| Makefile | <img src="img/cpp10-4-2/cpp104-2-4.png"> |
+| 실행결과 | <img src="img/cpp10-4-2/cpp104-2-5.png"> |
 
 # 실습과제 3
-STL의 vector클래스와 알고리즘을 이용하여 다음 처럼 동작하는 프로그램을 작성하시오.
-
-## words.hpp, words.cpp
-- 실습과제 2와 동일, 문자열 n개를 입력 받는 inputWords() 함수
 
 ## main.cpp
 ```cpp
@@ -296,14 +272,13 @@ world
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| words.hpp | <img src="img/cpp104-3-1.png"> |
-| words.cpp | <img src="img/cpp104-3-2.png"> |
-| main.cpp | <img src="img/cpp104-3-3.png"> |
-| Makefile | <img src="img/cpp104-3-4.png"> |
-| 실행결과 | <img src="img/cpp104-3-5.png"> |
+| words.hpp | <img src="img/cpp10-4-3/cpp104-3-1.png"> |
+| words.cpp | <img src="img/cpp10-4-3/cpp104-3-2.png"> |
+| main.cpp | <img src="img/cpp10-4-3/cpp104-3-3.png"> |
+| Makefile | <img src="img/cpp10-4-3/cpp104-3-4.png"> |
+| 실행결과 | <img src="img/cpp10-4-3/cpp104-3-5.png"> |
 
 # 실습과제 4
-이름, 점수를 저장하는 Student 클래스를 작성하라. Student 객체를 비교하는 < 연산자 함수를 정의하라. STL의 vector클래스와 알고리즘 max_element을 이용하여 다음 처럼 동작하는 프로그램을 작성하시오.
 
 ## student.hpp
 ```cpp
@@ -419,14 +394,13 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| student.hpp | <img src="img/cpp104-4-1.png"> |
-| student.cpp | <img src="img/cpp104-4-2.png"> |
-| main.cpp | <img src="img/cpp104-4-3.png"> |
-| Makefile | <img src="img/cpp104-4-4.png"> |
-| 실행결과 | <img src="img/cpp104-4-5.png"> |
+| student.hpp | <img src="img/cpp10-4-4/cpp104-4-1.png"> |
+| student.cpp | <img src="img/cpp10-4-4/cpp104-4-2.png"> |
+| main.cpp | <img src="img/cpp10-4-4/cpp104-4-3.png"> |
+| Makefile | <img src="img/cpp10-4-4/cpp104-4-4.png"> |
+| 실행결과 | <img src="img/cpp10-4-4/cpp104-4-5.png"> |
 
 # 실습과제 5
-3명 학생의 이름, 국어, 영어성적을 입력 받아 각 학생의 평균값을 구한 후 성적순으로 출력하는 C++프로그램을 작성하라 → Student 클래스정의, < 연산자함수정의, sort 함수 이용할 것
 
 ## student.hpp
 ```cpp
@@ -556,14 +530,13 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| student.hpp | <img src="img/cpp104-5-1.png"> |
-| student.cpp | <img src="img/cpp104-5-2.png"> |
-| main.cpp | <img src="img/cpp104-5-3.png"> |
-| Makefile | <img src="img/cpp104-5-4.png"> |
-| 실행결과 | <img src="img/cpp104-5-5.png"> |
+| student.hpp | <img src="img/cpp10-4-5/cpp104-5-1.png"> |
+| student.cpp | <img src="img/cpp10-4-5/cpp104-5-2.png"> |
+| main.cpp | <img src="img/cpp10-4-5/cpp104-5-3.png"> |
+| Makefile | <img src="img/cpp10-4-5/cpp104-5-4.png"> |
+| 실행결과 | <img src="img/cpp10-4-5/cpp104-5-5.png"> |
 
 # 실습과제 6
-아래 결과가 나오도록 max_element, min_element 함수와 동일하게 동작하는 템플릿 함수 my_max_element, my_min_element 함수를 정의하시오.
 
 ## myalgo.hpp
 ```cpp
@@ -669,13 +642,12 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| myalgo.hpp | <img src="img/cpp104-6-1.png"> |
-| main.cpp | <img src="img/cpp104-6-2.png"> |
-| Makefile | <img src="img/cpp104-6-3.png"> |
-| 실행결과 | <img src="img/cpp104-6-4.png"> |
+| myalgo.hpp | <img src="img/cpp10-4-6/cpp104-6-1.png"> |
+| main.cpp | <img src="img/cpp10-4-6/cpp104-6-2.png"> |
+| Makefile | <img src="img/cpp10-4-6/cpp104-6-3.png"> |
+| 실행결과 | <img src="img/cpp10-4-6/cpp104-6-4.png"> |
 
 # 실습과제 7
-아래 결과가 나오도록 sort 함수와 동일하게 동작하는 템플릿 함수 my_sort 함수를 정의하시오.
 
 ## mysort.hpp
 ```cpp
@@ -779,8 +751,8 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| mysort.hpp | <img src="img/cpp104-7-1.png"> |
-| main.cpp | <img src="img/cpp104-7-2.png"> |
-| Makefile | <img src="img/cpp104-7-3.png"> |
-| 실행결과 | <img src="img/cpp104-7-4.png"> |
+| mysort.hpp | <img src="img/cpp10-4-7/cpp104-7-1.png"> |
+| main.cpp | <img src="img/cpp10-4-7/cpp104-7-2.png"> |
+| Makefile | <img src="img/cpp10-4-7/cpp104-7-3.png"> |
+| 실행결과 | <img src="img/cpp10-4-7/cpp104-7-4.png"> |
 
