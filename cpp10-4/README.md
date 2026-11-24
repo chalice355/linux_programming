@@ -115,11 +115,11 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| vecprint.hpp | <img src="img/cpp10-4-1/cpp104-1-1.png"> |
-| vecprint.cpp | <img src="img/cpp10-4-1/cpp104-1-2.png"> |
-| main.cpp | <img src="img/cpp10-4-1/cpp104-1-3.png"> |
-| Makefile | <img src="img/cpp10-4-1/cpp104-1-4.png"> |
-| 실행결과 | <img src="img/cpp10-4-1/cpp104-1-5.png"> |
+| vecprint.hpp | <img src="img/cpp10-4_1/cpp104-1-1.png"> |
+| vecprint.cpp | <img src="img/cpp10-4_1/cpp104-1-2.png"> |
+| main.cpp | <img src="img/cpp10-4_1/cpp104-1-3.png"> |
+| Makefile | <img src="img/cpp10-4_1/cpp104-1-4.png"> |
+| 실행결과 | <img src="img/cpp10-4_1/cpp104-1-5.png"> |
 
 # 실습과제 2
 
@@ -208,11 +208,11 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| words.hpp | <img src="img/cpp10-4-2/cpp104-2-1.png"> |
-| words.cpp | <img src="img/cpp10-4-2/cpp104-2-2.png"> |
-| main.cpp | <img src="img/cpp10-4-2/cpp104-2-3.png"> |
-| Makefile | <img src="img/cpp10-4-2/cpp104-2-4.png"> |
-| 실행결과 | <img src="img/cpp10-4-2/cpp104-2-5.png"> |
+| words.hpp | <img src="img/cpp10-4_2/cpp104-2-1.png"> |
+| words.cpp | <img src="img/cpp10-4_2/cpp104-2-2.png"> |
+| main.cpp | <img src="img/cpp10-4_2/cpp104-2-3.png"> |
+| Makefile | <img src="img/cpp10-4_2/cpp104-2-4.png"> |
+| 실행결과 | <img src="img/cpp10-4_2/cpp104-2-5.png"> |
 
 # 실습과제 3
 
@@ -272,11 +272,11 @@ world
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| words.hpp | <img src="img/cpp10-4-3/cpp104-3-1.png"> |
-| words.cpp | <img src="img/cpp10-4-3/cpp104-3-2.png"> |
-| main.cpp | <img src="img/cpp10-4-3/cpp104-3-3.png"> |
-| Makefile | <img src="img/cpp10-4-3/cpp104-3-4.png"> |
-| 실행결과 | <img src="img/cpp10-4-3/cpp104-3-5.png"> |
+| words.hpp | <img src="img/cpp10-4_3/cpp104-3-1.png"> |
+| words.cpp | <img src="img/cpp10-4_3/cpp104-3-2.png"> |
+| main.cpp | <img src="img/cpp10-4_3/cpp104-3-3.png"> |
+| Makefile | <img src="img/cpp10-4_3/cpp104-3-4.png"> |
+| 실행결과 | <img src="img/cpp10-4_3/cpp104-3-5.png"> |
 
 # 실습과제 4
 
@@ -394,11 +394,11 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| student.hpp | <img src="img/cpp10-4-4/cpp104-4-1.png"> |
-| student.cpp | <img src="img/cpp10-4-4/cpp104-4-2.png"> |
-| main.cpp | <img src="img/cpp10-4-4/cpp104-4-3.png"> |
-| Makefile | <img src="img/cpp10-4-4/cpp104-4-4.png"> |
-| 실행결과 | <img src="img/cpp10-4-4/cpp104-4-5.png"> |
+| student.hpp | <img src="img/cpp10-4_4/cpp104-4-1.png"> |
+| student.cpp | <img src="img/cpp10-4_4/cpp104-4-2.png"> |
+| main.cpp | <img src="img/cpp10-4_4/cpp104-4-3.png"> |
+| Makefile | <img src="img/cpp10-4_4/cpp104-4-4.png"> |
+| 실행결과 | <img src="img/cpp10-4_4/cpp104-4-5.png"> |
 
 # 실습과제 5
 
@@ -530,11 +530,11 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| student.hpp | <img src="img/cpp10-4-5/cpp104-5-1.png"> |
-| student.cpp | <img src="img/cpp10-4-5/cpp104-5-2.png"> |
-| main.cpp | <img src="img/cpp10-4-5/cpp104-5-3.png"> |
-| Makefile | <img src="img/cpp10-4-5/cpp104-5-4.png"> |
-| 실행결과 | <img src="img/cpp10-4-5/cpp104-5-5.png"> |
+| student.hpp | <img src="img/cpp10-4_5/cpp104-5-1.png"> |
+| student.cpp | <img src="img/cpp10-4_5/cpp104-5-2.png"> |
+| main.cpp | <img src="img/cpp10-4_5/cpp104-5-3.png"> |
+| Makefile | <img src="img/cpp10-4_5/cpp104-5-4.png"> |
+| 실행결과 | <img src="img/cpp10-4_5/cpp104-5-5.png"> |
 
 # 실습과제 6
 
@@ -642,10 +642,10 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| myalgo.hpp | <img src="img/cpp10-4-6/cpp104-6-1.png"> |
-| main.cpp | <img src="img/cpp10-4-6/cpp104-6-2.png"> |
-| Makefile | <img src="img/cpp10-4-6/cpp104-6-3.png"> |
-| 실행결과 | <img src="img/cpp10-4-6/cpp104-6-4.png"> |
+| myalgo.hpp | <img src="img/cpp10-4_6/cpp104-6-1.png"> |
+| main.cpp | <img src="img/cpp10-4_6/cpp104-6-2.png"> |
+| Makefile | <img src="img/cpp10-4_6/cpp104-6-3.png"> |
+| 실행결과 | <img src="img/cpp10-4_6/cpp104-6-4.png"> |
 
 # 실습과제 7
 
@@ -751,8 +751,8 @@ clean :
 ## 실행결과
 | 구분 | 이미지 |
 | --- | --- |
-| mysort.hpp | <img src="img/cpp10-4-7/cpp104-7-1.png"> |
-| main.cpp | <img src="img/cpp10-4-7/cpp104-7-2.png"> |
-| Makefile | <img src="img/cpp10-4-7/cpp104-7-3.png"> |
-| 실행결과 | <img src="img/cpp10-4-7/cpp104-7-4.png"> |
+| mysort.hpp | <img src="img/cpp10-4_7/cpp104-7-1.png"> |
+| main.cpp | <img src="img/cpp10-4_7/cpp104-7-2.png"> |
+| Makefile | <img src="img/cpp10-4_7/cpp104-7-3.png"> |
+| 실행결과 | <img src="img/cpp10-4_7/cpp104-7-4.png"> |
 
