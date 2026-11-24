@@ -200,8 +200,80 @@ clean :
 | 실행결과 | <img src="img/cpp10-4_2/cpp104-2-5.png"> |
 
 # 실습과제 3
+STL의 vector클래스와 알고리즘을 이용하여 다음 처럼 동작하는 프로그램을 작성하시오.
+
+## words.hpp
+```cpp
+#ifndef _WORDS_HPP_
+#define _WORDS_HPP_
+...
+#endif
+```
+- 헤더파일 중복 포함 방지
+
+```cpp
+#include <string>
+#include <vector>
+using namespace std;
+```
+- 함수의 매개변수에 vector와 string을 사용하므로 vector, string 헤더 포함
+
+```cpp
+void inputWords(vector<string>& sv, int n);
+```
+- 문자열 n개를 입력 받아 벡터에 삽입하는 함수 선언
+- 함수 안에서 main의 벡터에 원소를 추가해야 하므로 벡터를 참조(&)로 전달, 값으로 전달하면 복사본에만 추가되어 main의 벡터는 비어 있게 됨
+
+## words.cpp
+```cpp
+#include <iostream>
+#include "words.hpp"
+using namespace std;
+```
+- cout, cin, getline을 사용하기 위해 iostream 포함
+- 함수 선언부가 있는 words.hpp 포함
+
+```cpp
+void inputWords(vector<string>& sv, int n) {
+    for (int i = 0; i < n; i++) {
+```
+- 매개변수 n만큼 반복, main에서 5를 전달하므로 5번 반복
+
+```cpp
+        string word;
+        cout << "문자열을 입력하세요: ";
+        getline(cin, word);
+```
+- 입력 받을 문자열을 저장할 string 객체 word 선언
+- getline()으로 엔터를 누를 때까지 한 줄을 읽어 word에 저장
+
+```cpp
+        sv.push_back(word);
+    }
+}
+```
+- push_back()으로 입력 받은 문자열을 벡터의 끝에 삽입, 입력한 순서대로 저장됨
 
 ## main.cpp
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include "words.hpp"
+using namespace std;
+```
+- 알고리즘 함수 sort()를 사용하기 위해 algorithm 헤더 포함
+- 입력 함수 inputWords()를 사용하기 위해 words.hpp 포함
+
+```cpp
+vector<string> sv;
+vector<string>::iterator it;
+inputWords(sv, 5);
+```
+- string 타입 원소를 저장하는 벡터 sv와 iterator it 선언
+- inputWords()를 호출하여 문자열 5개를 입력 받아 sv에 저장
+
 ```cpp
 sort(sv.begin(), sv.end());
 ```
